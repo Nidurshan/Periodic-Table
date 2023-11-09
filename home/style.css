@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background:  */
+    background-image: url(../images/gradient-1.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.title{
+    font-size: 70px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.boxes{
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 25px;
+    max-width: 1200px;
+    justify-content: center !important;
+    align-items: center !important;
+    color: white;
+    padding-left: 25%;
+}
+.boxes .box{
+    width: 110px;
+    height: 110px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) , gray);
+    padding: 43%;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border:2px solid rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.box:hover{
+    background-image: linear-gradient(to right, pink, rgb(55, 208, 255));
+    color: black;
+}
